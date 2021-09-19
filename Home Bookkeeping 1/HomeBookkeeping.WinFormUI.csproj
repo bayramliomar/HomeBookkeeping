@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C9AB3E9-3AB2-4497-8E3D-65629A63FB57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Home_Bookkeeping_1</RootNamespace>
+    <AssemblyName>Home Bookkeeping 1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddExpenseCategory.Designer.cs">
+      <DependentUpon>AddExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExpenseSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddExpenseSubCategory.Designer.cs">
+      <DependentUpon>AddExpenseSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddIncomeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIncomeCategory.Designer.cs">
+      <DependentUpon>AddIncomeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddIncomeSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIncomeSubCategory.Designer.cs">
+      <DependentUpon>AddIncomeSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUnits.Designer.cs">
+      <DependentUpon>AddUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation_Delete.Designer.cs">
+      <DependentUpon>Confirmation_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation_Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation_Enter.Designer.cs">
+      <DependentUpon>Confirmation_Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation_Update.Designer.cs">
+      <DependentUpon>Confirmation_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAccount.Designer.cs">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteExpenseCategory.Designer.cs">
+      <DependentUpon>DeleteExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteExpenseSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteExpenseSubCategory.Designer.cs">
+      <DependentUpon>DeleteExpenseSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteIncomeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteIncomeCategory.Designer.cs">
+      <DependentUpon>DeleteIncomeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteIncomeSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteIncomeSubCategory.Designer.cs">
+      <DependentUpon>DeleteIncomeSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUnits.Designer.cs">
+      <DependentUpon>DeleteUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesCardDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesCardDelete.Designer.cs">
+      <DependentUpon>ExpensesCardDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesCardInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesCardInsert.Designer.cs">
+      <DependentUpon>ExpensesCardInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesCardUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesCardUpdate.Designer.cs">
+      <DependentUpon>ExpensesCardUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeCardDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeCardDelete.Designer.cs">
+      <DependentUpon>IncomeCardDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeCardInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeCardInsert.Designer.cs">
+      <DependentUpon>IncomeCardInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeCardUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeCardUpdate.Designer.cs">
+      <DependentUpon>IncomeCardUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IstifadeciKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IstifadeciKarti.Designer.cs">
+      <DependentUpon>IstifadeciKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_user_accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_user_accounts.Designer.cs">
+      <DependentUpon>Manage_user_accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintSelection.Designer.cs">
+      <DependentUpon>PrintSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAccount.Designer.cs">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateExpenseCategory.Designer.cs">
+      <DependentUpon>UpdateExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateExpenseSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateExpenseSubCategory.Designer.cs">
+      <DependentUpon>UpdateExpenseSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateIncomeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateIncomeCategory.Designer.cs">
+      <DependentUpon>UpdateIncomeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateIncomeSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateIncomeSubCategory.Designer.cs">
+      <DependentUpon>UpdateIncomeSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUnits.Designer.cs">
+      <DependentUpon>UpdateUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCardUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCardUpdate.Designer.cs">
+      <DependentUpon>UserCardUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddExpenseCategory.resx">
+      <DependentUpon>AddExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddExpenseSubCategory.resx">
+      <DependentUpon>AddExpenseSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddIncomeCategory.resx">
+      <DependentUpon>AddIncomeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddIncomeSubCategory.resx">
+      <DependentUpon>AddIncomeSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUnits.resx">
+      <DependentUpon>AddUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation_Delete.resx">
+      <DependentUpon>Confirmation_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation_Enter.resx">
+      <DependentUpon>Confirmation_Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation_Update.resx">
+      <DependentUpon>Confirmation_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAccount.resx">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteExpenseCategory.resx">
+      <DependentUpon>DeleteExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteExpenseSubCategory.resx">
+      <DependentUpon>DeleteExpenseSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteIncomeCategory.resx">
+      <DependentUpon>DeleteIncomeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteIncomeSubCategory.resx">
+      <DependentUpon>DeleteIncomeSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUnits.resx">
+      <DependentUpon>DeleteUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesCardDelete.resx">
+      <DependentUpon>ExpensesCardDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesCardInsert.resx">
+      <DependentUpon>ExpensesCardInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesCardUpdate.resx">
+      <DependentUpon>ExpensesCardUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeCardDelete.resx">
+      <DependentUpon>IncomeCardDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeCardInsert.resx">
+      <DependentUpon>IncomeCardInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeCardUpdate.resx">
+      <DependentUpon>IncomeCardUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IstifadeciKarti.resx">
+      <DependentUpon>IstifadeciKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_user_accounts.resx">
+      <DependentUpon>Manage_user_accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintSelection.resx">
+      <DependentUpon>PrintSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateAccount.resx">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateExpenseCategory.resx">
+      <DependentUpon>UpdateExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateExpenseSubCategory.resx">
+      <DependentUpon>UpdateExpenseSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateIncomeCategory.resx">
+      <DependentUpon>UpdateIncomeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateIncomeSubCategory.resx">
+      <DependentUpon>UpdateIncomeSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUnits.resx">
+      <DependentUpon>UpdateUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCardUpdate.resx">
+      <DependentUpon>UserCardUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomeBookkeeping.ORM\HomeBookkeeping.ORM.csproj">
+      <Project>{2a8bd8f3-1527-4b99-8093-ed06bd1ee8ee}</Project>
+      <Name>HomeBookkeeping.ORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
